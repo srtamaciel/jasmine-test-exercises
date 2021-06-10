@@ -1,17 +1,9 @@
-/* 
-FOR TEST EXAMPLES AND DIFFERENT MATCHERS (`toEqual`, `toBe`, `not.toBe`, etc):
- https://jasmine.github.io/api/3.4/global
-*/
+const centsToDecimals = require('../src/cents-to-decimals')
 
 describe('centsToDecimals function', () => {
-  // Describes the suite / group of tests
-
-  // Use this test suite as a starting point/reference.
 
   it('Returns undefined when parameter passed is a string.', () => {
-    // console.log(centsToDecimals('abcdef') === undefined);
-
-    // expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+   
     expect(centsToDecimals('abcdef')).toEqual(undefined);
   });
 
